@@ -8,51 +8,6 @@
 
 
 <body>
-<header>
-    <header>
-        <nav>
-            <ul>
-                <li><a th:href="@{/food/main}">홈</a></li>
-                <li><a th:href="@{/food/recipe}">레시피 보러가기</a></li>
-                <li><a th:href="@{/food/board/write}">레시피 작성하기</a></li>
-                <li><a th:href="@{/food/list}">Q & A</a></li>
-            </ul>
-        </nav>
-    </header>
-</header>
-<h2>
-    <span >
-        <a th:href="@{/food/main}"> Home</a></span>
-    <span>
-    <a th:href="@{/food/recipe}">레시피</a></span>
-
-</h2>
-
-<table>
-    <thead>
-    <tr>
-        <th>글번호</th>
-        <th>제목</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="food: ${list}">
-        <td th:text="${food.id}"></td>
-        <td>
-            <a th:text="${food.title}" th:href="@{/food/list/view(id=${food.id})}"></a>
-        </td>
-    </tr>
-    
-    </tbody>
-</table>
-
-<a th:href="@{/food/board/write}"> 글쓰기 </a>
-
-<th:block th:each="page:${#numbers.sequence(startPage,endPage)}">
-    <a th:if="@{page!=nowPage}" th:href="@{/food/list(page=${page-1})}" th:text="${page}"></a>
-
-    <strong th:if="@{page==nowPage}" th:text="${page}" style="color :red"></strong>
-</th:block>
 
 </body>
 </html>

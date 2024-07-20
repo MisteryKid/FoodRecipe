@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Recipe Site</title>
+  <link rel="stylesheet" href="/css/recipe.css" />
+
+</head>
+<body>
+<header>
+  <h1>인기 레시피</h1>
+  <nav>
+    <ul>
+      <li><a th:href="@{/food/main}">홈</a></li>
+      <li><a th:href="@{/food/recipe}">레시피 보러가기</a></li>
+      <li><a th:href="@{/food/recipe/write}"> 레시피 작성하기</a></li>
+      <li><a th:href="@{/food/list}">질문 게시판</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h2>Featured Recipes</h2>
+
+  <div class="recipe-list" th:each="recipe:${list}">
+    <span class="recipe-card">
+      <img src="/png/요리사진.png" alt="레시피 1">
+      <h3 th:text="${recipe.title}">비빔밥</h3>
+      <p th:text="${recipe.content}">Description of Recipe 1</p>
+    </span>
+  </div>
+</main>
+</body>
+</html>

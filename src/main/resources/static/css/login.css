@@ -1,0 +1,103 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffc107;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    color: #ffc107;
+    margin-bottom: 30px;
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-forgot {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.login-forgot-link {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.login button {
+    display: block;
+    width: 100%;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #ffb300;
+}
+
+.login-signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-signup-link {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ffc107;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}

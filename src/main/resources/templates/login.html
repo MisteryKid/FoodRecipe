@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>로그인</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a th:href="@{/food/main}">홈</a></li>
+            <li><a th:href="@{/food/recipe}">레시피 보러가기</a></li>
+            <li><a th:href="@{/food/recipe/write}">레시피 작성하기</a></li>
+            <li><a th:href="@{/food/list}">Q & A</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <form method="post" action="food/board/writepro" class="login">
+        <h1 class="login-title">로그인</h1>
+        <label>아이디</label>
+        <input
+                name="username"
+                type="text"
+                placeholder="Email 또는 전화번호"
+        />
+        <label>비밀번호</label>
+        <input
+                name="password"
+                type="password"
+                placeholder="비밀번호"
+        />
+        <div class="login-forgot">
+            <a class="login-forgot-link" th:href="@{/food/findpw}">비밀번호를 잊으셨나요?</a>
+        </div>
+        <button>로그인</button>
+        <div class="login-signup">
+            회원이 아니신가요?
+            <a class="login-signup-link" th:href="@{/food/newmem}">가입하기</a>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/first.css">
+    <title>Recipe for newbie</title>
+</head>
+<body>
+<div class="including-image">
+
+        <span id="logo">로고(요리에 취하다)</span>
+        <a class="login" th:href="@{/food/login} ">로그인</a>
+    <!-- <div class="login">로그인</div> -->
+    <div class="text">
+        <h1 class="greeting">
+            <label for="search">
+                반갑습니다, <br>
+                오늘은 어떤 요리를 만들어볼까요?
+            </label>
+
+        </h1>
+        <form>
+            <input id="search" name="search" type="text" placeholder="e.g. 김치찜">
+            <button>검색</button>
+        </form>
+
+        <p>
+            <span id="signup">
+                <a th:href="@{/food/login}">로그인</a></span>
+            <span id="rec">
+                <a th:href="@{/food/recipe}">추천 레시피</a> </span>
+            <span id="popular" >인기 레시피</span>
+            <span id="myrecipe">내 레시피</span>
+            <span id="question">
+                <a th:href="@{/food/list}">Q&A</a> </span>
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-weight: 100;
+    font-family: "Jua", sans-serif;
+}
+
+.including-image {
+    background-image:
+        /* rgba(255, 216, 114, 0.7) */
+            linear-gradient( rgba(255, 216, 114, 0.5) 30%, rgba(0, 0, 0, 0)),
+                /* linear-gradient( rgba(0,0,0,0.5) 30%, rgba(0,0,0,0)), */
+                /* linear-gradient(rgba(255, 167, 63, 0.7) 30%, rgba(0,0,0,0)), */
+            url('first_page.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 24px ;
+    /* height: 100%; */
+    width: 100%;
+}
+
+#logo {
+    text-align: left;
+    padding: 5px 20px;
+}
+.login {
+    text-align: right;
+    padding: 5px 20px;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 50;
+    /* font-weight: 50px; */
+    padding: 200px;
+    text-align: center;
+}
+
+.greeting {
+    font-weight: 300;
+    color: #434343;
+    /* margin: 0; */
+}
+
+input {
+    color: #434343;
+    border: 5px solid #ededed;
+    border-radius: 15px;
+    padding: 8px;
+    width: /*70%*/ 50%;
+    font-family: "Jua";
+    font-size: 30px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    /* background-image: url(button.png); */
+    color: #7e7e7e;
+    margin: 10px;
+    /* padding: 10px 10px; */
+    border: 5px solid #ededed;
+    border-radius: 8px;
+    font-family: "Jua";
+    font-size: 30px;
+    font-weight: 500;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+#signup {
+    /* background-color: #fea51d; */
+    background-color:#ffd872;
+    color: #ffffff;
+    padding: 8px;
+    border: 2px solid #ffd872;
+    border-radius: 15px;
+}
+
+#rec {
+    background-color:#ffd872;
+    color: #ffffff;
+    padding: 8px;
+    border: 2px solid #ffd872;
+    border-radius: 15px;
+}
+#popular {
+    background-color:#ffd872;
+    color: #ffffff;
+    padding: 8px;
+    border: 2px solid #ffd872;
+    border-radius: 15px;
+}
+
+#myrecipe {
+    background-color:#ffd872;
+    color: #ffffff;
+    padding: 8px;
+    border: 2px solid #ffd872;
+    border-radius: 15px;
+}
+
+#question {
+    background-color:#ffd872;
+    color: #ffffff;
+    padding: 8px;
+    border: 2px solid #ffd872;
+    border-radius: 15px;
+}

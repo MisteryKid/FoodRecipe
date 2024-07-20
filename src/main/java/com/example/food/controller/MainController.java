@@ -37,7 +37,7 @@ public class MainController {
     }
 
     @GetMapping({"/","/main"})
-    public String main(){
+    public String main_page(){
         log.info("main.........");
 
         return "/first";

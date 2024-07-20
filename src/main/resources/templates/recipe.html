@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <title>Recipe Site</title>
-  <link rel="stylesheet" href="/css/recipe.css" />
+  <link rel="stylesheet" th:href="@{/css/recipe.css}" />
 
 </head>
 <body>
@@ -23,8 +23,8 @@
   <div class="recipe-list" th:each="recipe:${list}">
     <span class="recipe-card">
       <img src="/png/요리사진.png" alt="레시피 1">
-      <h3 th:text="${recipe.title}">비빔밥</h3>
-      <p th:text="${recipe.content}">Description of Recipe 1</p>
+      <a th:text="${recipe.title}">비빔밥</a>
+      <a th:text="${recipe.content}">Description of Recipe 1</a>
     </span>
   </div>
 </main>

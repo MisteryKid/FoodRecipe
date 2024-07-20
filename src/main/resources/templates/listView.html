@@ -28,8 +28,19 @@
     <p th:text="${list.content}">내용이 들어갈 부분입니다.</p>
 
 
-    <a th:href="@{/list/delete(id=${list.id})}">글삭제</a>
-    <a th:href="@{/list/modify/{id}(id=${list.id})}">수정</a>
+    <!--
+    <h2 th:text="|@{#list.size(list.answerList)}개의 답변이 있습니다. |"></h2>
+
+    <div>
+        <ul>
+            <li th:each=" answer : ${list.answerList}" th:text="${answer.content}"></li>
+        </ul>
+    </div>
+-->
+    <form th:action="@{|/food/answer/create/${list.id}|}" method="post">
+        <textarea name="content" id="content" rows="15" placeholder="답변을 입력하세요."></textarea>
+        <input type="submit" value="답변등록">
+    </form>
 
 </div>
 <footer>

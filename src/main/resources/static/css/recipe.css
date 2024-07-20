@@ -29,11 +29,15 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    justify-content: center;
+    align-items: start;
 }
 .recipe-card {
     border: 1px solid #ccc;
     padding: 10px;
-    background-color: #fff; /* 흰색 카드 배경 */
+    background-color: #fff;
+    display: grid;
+    justify-self: center;
 }
 .recipe-card img {
     width: 100%;

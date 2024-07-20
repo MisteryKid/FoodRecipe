@@ -20,12 +20,14 @@
 <main>
   <h2>Featured Recipes</h2>
 
-  <div class="recipe-list" th:each="recipe:${list}">
-    <span class="recipe-card">
+  <div class="recipe-list">
+  <div th:each="recipe:${list}">
+    <div class="recipe-card">
       <img src="/png/요리사진.png" alt="레시피 1">
       <a th:text="${recipe.title}">비빔밥</a>
       <a th:text="${recipe.content}">Description of Recipe 1</a>
-    </span>
+    </div>
+  </div>
   </div>
 </main>
 </body>
